@@ -6,5 +6,6 @@
 - Did not add AdSense publisher/script IDs because no publisher ID was provided and ads are not yet active.
 - Added an English KeyboxHub introduction focused on lawful research, authorization, and protecting device credentials; kept it informational and avoided instructions for using shared credentials to bypass integrity checks.
 - Replaced the homepage banner with `bg.jpg` from `hzzmonetvn/keyboxhub-web` and disabled the old Honkai artwork credit because it no longer describes the displayed image.
+- Kept the existing Fuwari homepage layout, Roboto typeface, violet accent, and banner artwork during a polish pass; normalized the global font sizes and narrowed broad transitions to opacity/transform where appropriate.
 - Did not create a GitHub Actions deploy workflow: Cloudflare Pages was said to already exist, and connecting GitHub through the Cloudflare dashboard avoids storing deployment credentials in the repository.
-- Push and deployment remain pending because this environment has no GitHub HTTPS credentials. Build validation is also blocked by an existing Tailwind CSS error in `src/styles/markdown.css`; `astro check` reports existing errors in `src/components/Navbar.astro` and `src/pages/archive.astro`.
+- Earlier push and build validation were blocked by missing GitHub HTTPS credentials and existing validation errors; the current polish build succeeds. Push status is tracked per change.
