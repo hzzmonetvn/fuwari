@@ -9,4 +9,4 @@
 - Kept the existing Fuwari homepage layout, Roboto typeface, violet accent, and banner artwork during a polish pass; normalized the global font sizes and narrowed broad transitions to opacity/transform where appropriate.
 - Did not create a GitHub Actions deploy workflow: Cloudflare Pages was said to already exist, and connecting GitHub through the Cloudflare dashboard avoids storing deployment credentials in the repository.
 - Earlier push and build validation were blocked by missing GitHub HTTPS credentials and existing validation errors; the current polish build succeeds. Push status is tracked per change.
-- Documented the self-hosted AdGuard Home DNS service using observed Caddy routing and active ports; described encrypted DNS endpoints and privacy limits without publishing internal management details or access tokens.
+- Documented the self-hosted AdGuard Home DNS service using observed Caddy routing, active ports, and enabled blocklist names; described encrypted DNS endpoints and privacy limits without publishing internal management details or access tokens.
