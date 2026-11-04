@@ -55,19 +55,9 @@ In your device's Private DNS or encrypted DNS settings, select the matching prot
 
 After saving the setting, visit a few sites and confirm that apps still work. If the client reports a certificate or connection error, check the hostname, protocol, and network policy; do not disable certificate validation. A network that blocks encrypted DNS may also prevent the connection.
 
-## What is blocked?
+## Blocklist
 
-The configuration currently has the following blocklists enabled:
-
-- **AdGuard DNS filter** — general ad and tracker filtering.
-- **HzzMonet list** — the server's custom list, sourced from [ABPVN](https://abpvn.com/vip/hzzmonet.txt).
-- **AdGuard DNS Popup Hosts filter** — popup-related domains.
-- **HaGeZi device tracker lists** — Apple, OPPO/Realme, Samsung, Vivo, Windows/Office, and Xiaomi telemetry or tracking domains.
-- **Peter Lowe's Blocklist** — advertising, tracking, and other commonly blocked hosts.
-- **Dan Pollock's List** — hosts associated with advertising and tracking.
-- **HostsVN** — a Vietnamese hosts list.
-
-Some additional community lists are present in the configuration but disabled, so they are not part of active filtering. The enabled lists can change as they are maintained; this is a snapshot of the server configuration, not a guarantee that every domain in a category is blocked. Filtering may also affect legitimate app features. If something breaks, switch DNS providers or contact the operator with the affected domain.
+The DNS service uses the [HzzMonet Blacklist](https://github.com/hzzmonetvn/blacklist), a community-maintained collection of ad- and tracker-blocking domains. Visit the repository for its current sources, formats, update details, and whitelist. The contents may change over time, and filtering can occasionally affect legitimate app features. If something stops working, switch DNS providers or contact the operator with the affected domain.
 
 ## Privacy and availability
 
